@@ -1,3 +1,14 @@
-h1 {
-    color: blue;
+/*appel elements HTML par nom de balise
+*/
+
+
+/*navigation menu*//*navigation menu*/
+ul {list-style-type: none ;}
+li{
+   font-size: small;
+   text-align: right; 
+   color: rgb(10, 10, 9);
 }
+
+/* par classe*/
+
