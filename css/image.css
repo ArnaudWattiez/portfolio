@@ -1,0 +1,11 @@
+body
+{
+    body
+    {
+        min-width: 100vh;
+        background:url("");
+        background-size: cover ;
+        background-repeat: repeat;
+        background-position: center;
+    }
+}
