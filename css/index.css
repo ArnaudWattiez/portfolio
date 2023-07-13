@@ -2,62 +2,143 @@
 
 /*appel elements HTML par nom de balise
 */
+   
 @font-face 
    {font-family: "Roboto"; 
       src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
-       src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); }
-/*selecteur*/
+      src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); }
+      
+      @font-face 
+      {font-family: "Askan Black"; 
+         src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot"); src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff") format("woff"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.svg#Askan Black") format("svg"); }
+      
+         @font-face 
+         {font-family: "SanchezSlabW03-BlackIt"; 
+            src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot"); 
+            src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.svg#SanchezSlabW03-BlackIt") format("svg"); }
+     
+     
+         /*selecteur*/
 span,
-header,
+
+
 nav, 
+
+
+
 footer,
 
 body  {
-   height:100vh;
-   background: rgb(127,123,130);
-   background: radial-gradient(circle, rgba(127,123,130,1) 0%, rgba(68,69,84,1) 48%);
-}
-
-.section-haut {
-   width: 100%;
-   height:50%;
-   color: #ffffff;
-   font-family:"roboto" ,"Helvetica Neue", "Helvetica, sans-serif";
-}
-
+   min-height:100vh;
+   background: rgb(0, 0, 0);
+   padding: 0px -90px 20px 0px;
+   position: relative;
+   }
 /*navigation menu*/
+header {
+   height: 100vh;
+   display:block;
+   padding: 10px 15px 10px;
+   position: relative;
+
+}
+header.header-inner{
+display: flex;
+}
+.logo {
+   text-decoration: none;
+   font-size:x-large;
+   color: #ffffff;
+   font-family: "Roboto";
+   position: fixed;
+   
+}
+.logo a{
+   text-decoration: none;
+   color: #ffffff;
+   
+}
+
 ul#horizontal-list {
    min-width: 300px;
    list-style:none;
    word-spacing:20px;
-   padding:  50px 40px 60px 30px;
-   font-size: 110%;
+   padding:  30px  10px;
+   font-size: 100%;
    text-align: right;
-   color: #546a7b;
-   font-family:"roboto" ,"Helvetica Neue", "Helvetica, sans-serif";
+   color: #ffffff;
+   font-family:"roboto" ,"Askan Black", "Helvetica, sans-serif";
+   margin-left: 55%;
+   position: fixed;
+   
 }
 ul#horizontal-list li {
+   display: inline-block;
    
-   display: inline;
+   
+   
 }
-
+ul#horizontal-list  li a{
+   text-decoration: none;
+   color: #ffffff;
+   display: inline-block;
+}
 
 .tittle--big {
-    height:100px; ;
-   font-size: 2.5rem;
-   color:#f6f6f7;
-   font-family:"roboto" ,"Helvetica Neue", "Helvetica, sans-serif";
-}
-.hamburger {
-   width: 70px;
-   height: 20%;
-   border-radius: 20px;
-   background-color: #ffffff;
+   height: 100px;
+   font-size: 2.5em;
+   color:#f8f8f8;
+   font-family:"roboto" ,"Askan Black", "Helvetica, sans-serif";
    display: block;
-   margin:50px 6px 5px 3px;
-color: #ffffff;
+   position: absolute;
+   top: 200px;
 }
 
-
-
-
+.paragraphe p{
+   color: #ffffff;
+   font-family: "SanchezSlabW03-BlackIt";
+   margin-top: 2%;
+   font-size :1.30rem;
+   display: block;
+   position:absolute ;
+   top: 300px;
+   margin-bottom: 10;
+}
+.sidebar-nav ul{
+list-style: none;
+display: block;
+margin-block-start: 45em;
+margin-block-end: 50em;
+margin-inline-start: 0px;
+margin-inline-end: 50px;
+padding-inline-start: 50px;
+}
+*{
+   cursor: default;
+}
+.sidebar-nav ul li a{
+   outline: 0;
+}
+.btn-sidebar{
+   border: 0!important;
+   background:transparent;
+   font-size: 1.25 rem;
+   padding: 0px;
+   height: 50px;
+   width: 50px;
+   border-radius:50px;
+   display:flex;
+   justify-content: center;
+}
+.sidebar-nav{
+   position:fixed;
+   bottom: 0px;
+   right:38px;
+   background: none;
+}
+.button{
+   border: 1px solid;
+   padding: 10%;
+   margin-top:10% ;
+   line-height: 40px;
+}
