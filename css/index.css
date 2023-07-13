@@ -21,12 +21,8 @@
          /*selecteur*/
 span,
 
+nav,
 
-nav, 
-
-
-
-footer,
 
 body  {
    min-height:100vh;
@@ -51,7 +47,6 @@ display: flex;
    color: #ffffff;
    font-family: "Roboto";
    position: fixed;
-   
 }
 .logo a{
    text-decoration: none;
@@ -91,7 +86,7 @@ ul#horizontal-list  li a{
    font-family:"roboto" ,"Askan Black", "Helvetica, sans-serif";
    display: block;
    position: absolute;
-   top: 200px;
+   top: 250px;
 }
 
 .paragraphe p{
@@ -101,9 +96,9 @@ ul#horizontal-list  li a{
    font-size :1.30rem;
    display: block;
    position:absolute ;
-   top: 300px;
-   margin-bottom: 10;
+   top: 380px;
 }
+
 .sidebar-nav ul{
 list-style: none;
 display: block;
@@ -141,4 +136,9 @@ padding-inline-start: 50px;
    padding: 10%;
    margin-top:10% ;
    line-height: 40px;
+}
+h1 {
+   color:#ffff;
+   position: absolute;
+   top: 200%;
 }
