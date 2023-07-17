@@ -20,7 +20,7 @@ body  {
    min-height:100vh;
    padding: 10;
    background: rgb(0, 0, 0);
-   padding: 20px;
+   padding: 0px;
    margin: 10px;
    }
 /*entete*/
@@ -91,76 +91,106 @@ ul#horizontal-list  li a{
    display: block;
    position:block; 
    margin-left: 5%;
-   margin-top: 7%;
+   margin-top: 7%; 
 }
 
-h1 {
-   color:#ffffff;
-   position: block;
-   font-family: "Roboto";
-   padding: 1%;
-   margin-bottom: 7%;
-   font-size: 1.8em; 
-   margin-left: 40%;
-}
+
 #A-propos h1{
-   margin-top: 10%;
-   margin-bottom: 1%;
+display: flex;
+flex-direction:column ;
+align-items: center;
+font-size: 2.4rem; 
+margin-top: 10%;
+
 }
 #A-propos p{
 height: 40px;
 padding: 2%;
-margin-bottom:10%;
+margin-bottom:15%;
+margin-top: 5%;
 display: block;
 position: relative;
 margin-left: 6%;
-font-size: 1.30rem;   
+font-size: 1.30rem;    
 }
-h2{
-   color: #ffffff;
-   font-family: "roboto";
-   padding: 2%;
-   font-size: 1.3em;
-   margin-left: 2%;
+
+#flexbox img{
+   display:none;
 }
-#services
-{
-   padding-top: 10%;
-  
+div#Compétences h1{
+ display: flex;
+flex-direction:column ;
+align-items: center;
+margin-top: 10%;
+margin-bottom: 10%;
+font-size: 2.4rem; 
 }
+
+#Compétences h2{
+   width: 10%;
+ height: 0%;
+}
+
 span {
    display:flex;
    flex-direction: column;
+   position: relative;
+   bottom: 20px;
    font-family: "roboto";
    font-size: 0.9em;
-
 }
-#language p{
+#flexbox{ width: 100%;
+   display: flex;
+}
+div#langage { 
+   width:40vh;
+   float:left;
+   position: relative;
+}
+#langage p{
    font-size: 1em;
-   margin-top:110px;
+   margin-top:10px;
    text-align:start; 
    }
-   
+#langage h2{
+   margin-bottom: 30%;
+}
+
+div#CV{
+   width: 50%;
+   float: right;
+   position:relative ;
+   margin-right: 5%;
+
+}
+div#CV h2{
+   margin-left: 50%;
+   margin-bottom: 10%;
+   height: 0%;
+}
 
 .skill{
-width: 100%;
-  padding-top: 10px;  
-  color: rgb(255, 250, 250);
+width: 50%;
+  padding-top: 0px;  
   margin-bottom: 0%; 
   border-radius: 10px 40px 40px 10px; 
   text-align: center;
 }
-.html {width: 50%; background-color: #691b63; 
+.html {width: 50%; background-color: #629999; 
 }
-.css{width: 30%; background-color: #2e3894;
+.css{width: 30%; background-color: #629999;
 }
-.js{width: 1%; background-color: rgb(87, 155, 90);
+.js{width: 10%; background-color: #629999;
 }
-.php{width: 10%; background-color: #a87272;
+.php{width: 10%; background-color: #629999;
 }
-.symfony{width: 1%; background-color: #60612e;
+.symfony{width: 10%; background-color: #629999;
 }
-/*retirer les points*/
+
+div.projets h1{
+   width: 0%;
+}
+
 .button-btn-sidebar{
    border: 0!important;
    background:transparent;
@@ -168,19 +198,18 @@ width: 100%;
    height: 100px;
    width: 20px;
    display:flex;
-   justify-content:center;
-   background: transparent; 
-   
+   justify-content:center;    
 }
 .sidebar {
    position:fixed;
    bottom: 130px;
-   right: 48px;
-   background: transparent;  
-    
+   right: 48px;        
 }
 .button{
    background: transparent;
    border-style: none;
    text-decoration:none;
+}
+ul{
+   list-style-type: none;
 }
