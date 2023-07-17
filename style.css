@@ -160,7 +160,7 @@ width: 100%;
 }
 .symfony{width: 1%; background-color: #60612e;
 }
-
+/*retirer les points*/
 .button-btn-sidebar{
    border: 0!important;
    background:transparent;
