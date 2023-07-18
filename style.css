@@ -1,68 +1,82 @@
-
 /*appel elements HTML par nom de balise
 */
-@font-face 
-   {font-family: "Roboto"; 
-      src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
-      src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); }
-      
-      @font-face 
-      {font-family: "Askan Black"; 
-         src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot"); src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff") format("woff"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.svg#Askan Black") format("svg"); }
-      
-         @font-face 
-         {font-family: "SanchezSlabW03-BlackIt"; 
-            src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot"); 
-            src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.svg#SanchezSlabW03-BlackIt") format("svg"); }
-     
-         /*selecteur*/
-body  {
-   min-height:100vh;
-   padding: 10;
+*{
+   margin: 0;
+   padding: 0;
+}
+@font-face {
+   font-family: "Roboto";
+   src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
+   src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg");
+}
+
+@font-face {
+   font-family: "Askan Black";
+   src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot");
+   src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff") format("woff"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.svg#Askan Black") format("svg");
+}
+
+@font-face {
+   font-family: "SanchezSlabW03-BlackIt";
+   src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot");
+   src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.svg#SanchezSlabW03-BlackIt") format("svg");
+}
+
+/*selecteur*/
+body {
+   min-height: 100vh;
+  
+  padding: 5%;
    background: rgb(0, 0, 0);
    padding: 0px;
    margin: 10px;
-   }
-/*entete*/
-header {
-   height: 20vh;
-   display:block;
-   padding: 10px ;
-   position: relative;
 }
+
+/*entete*/
+#header{
+height: 15%;
+width: 100%;
+display:flex;
+position: fixed;
+background-color: rgb(0, 0, 0)!important;
+right:0;
+left:0;
+top:0;
+
+}
+
 .logo {
    text-decoration: none;
-   font-size:x-large;
-   color: #ffffff;
+   font-size: x-large;
    font-family: "Roboto";
    position: fixed;
    top: 1%;
    left: 0%;
-   
 }
-.logo a{
+
+.logo a {
    text-decoration: none;
    color: #ffffff;
-   padding: 20%;
-  
 }
-ul#horizontal-list{
-   list-style:none;
-   word-spacing:20px; 
+
+ul#horizontal-list {
+   list-style: none;
+   word-spacing: 15px;
    font-size: 80%;
    color: #ffffff;
-   font-family:"roboto" ,"Askan Black", "Helvetica, sans-serif";
-   margin-left: 60%;
+   font-family: "roboto", "Askan Black", "Helvetica, sans-serif";
+   margin-left: 40%;
    position: fixed;
    padding: 1%;
    margin-top: 3%;
 }
 
-ul#horizontal-list li{
-   display: inline-block; 
+ul#horizontal-list li {
+   display: inline-block;
    bottom: 10%;
 }
-ul#horizontal-list  li a{
+
+ul#horizontal-list li a {
    text-decoration: none;
    color: #ffffff;
    display: inline-block;
@@ -72,144 +86,203 @@ ul#horizontal-list  li a{
 .tittle--big {
    height: 100px;
    font-size: 2.0em;
-   color:#ffffff;
-   font-family:"roboto" ,"Askan Black", "Helvetica, sans-serif";
-   display: block;
-   position:relative;
+   color: #ffffff;
+   font-family: "roboto", "Askan Black", "Helvetica, sans-serif";
+   display:relative;
    padding-top: 15%;
-   left: 2%;  
+   left: 20%;
    margin-bottom: 3%;
 
 }
 
 .paragraphe {
-  height: 15vh;
+   height: 15vh;
    color: #ffffff;
    font-family: "roboto";
    padding: 0%;
-   font-size :1.30rem;
+   font-size: 1.30rem;
    display: block;
-   position:block; 
-   margin-left: 5%;
-   margin-top: 7%; 
+   position: block;
+   margin-top: 7%;
+
 }
 
 
-#A-propos h1{
-display: flex;
-flex-direction:column ;
-align-items: center;
-font-size: 2.4rem; 
-margin-top: 10%;
+#A-propos h1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 2.4rem;
+   margin-top: 10%;
 
 }
-#A-propos p{
-height: 40px;
-padding: 2%;
-margin-bottom:15%;
-margin-top: 5%;
-display: block;
-position: relative;
-margin-left: 6%;
-font-size: 1.30rem;    
+
+#A-propos p {
+   height: 40px;
+   padding: 0%;
+   margin-bottom: 15%;
+   margin-top: 5%;
+   display: relative;
+   margin-left: 0%;
+   font-size: 1.30rem;
 }
 
-#flexbox img{
-   display:none;
-}
-div#Compétences h1{
- display: flex;
-flex-direction:column ;
-align-items: center;
-margin-top: 10%;
-margin-bottom: 10%;
-font-size: 2.4rem; 
+
+div#Compétences h1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   font-size: 2.4rem;
 }
 
-#Compétences h2{
+#Compétences h2 {
    width: 10%;
- height: 0%;
+   height: 0%;
 }
 
 span {
-   display:flex;
+   display: flex;
    flex-direction: column;
-   position: relative;
    bottom: 20px;
    font-family: "roboto";
    font-size: 0.9em;
 }
-#flexbox{ width: 100%;
+
+#flexbox {
+   width: 100%;
    display: flex;
 }
-div#langage { 
-   width:40vh;
-   float:left;
-   position: relative;
-}
-#langage p{
-   font-size: 1em;
-   margin-top:10px;
-   text-align:start; 
-   }
-#langage h2{
-   margin-bottom: 30%;
+
+div#langage {
+   width: 40%;
+   float: left;
+   margin-right: 5%;
+   margin-left: 2%;
+
 }
 
-div#CV{
+#langage p {
+   font-size: 1em;
+   margin-top: 10px;
+   text-align: start;
+
+}
+
+#langage h2 {
+   margin-bottom: 10%;
+}
+
+.skill {
+   width: 50%;
+   padding-top: 0px;
+   margin-bottom: 0%;
+   border-radius: 40px;
+   text-align: center;
+}
+
+#CV h2 {
+   margin-left: 0%;
+   margin-bottom: 3%;
    width: 50%;
    float: right;
-   position:relative ;
-   margin-right: 5%;
+   text-align: center;
+
 
 }
-div#CV h2{
-   margin-left: 50%;
-   margin-bottom: 10%;
-   height: 0%;
+
+div#projets h1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 2.4rem;
+   margin-top: 10%;
 }
 
-.skill{
-width: 50%;
-  padding-top: 0px;  
-  margin-bottom: 0%; 
-  border-radius: 10px 40px 40px 10px; 
-  text-align: center;
-}
-.html {width: 50%; background-color: #629999; 
-}
-.css{width: 30%; background-color: #629999;
-}
-.js{width: 10%; background-color: #629999;
-}
-.php{width: 10%; background-color: #629999;
-}
-.symfony{width: 10%; background-color: #629999;
+.html {
+   width: 50%;
+   background-color: #629999;
 }
 
-div.projets h1{
-   width: 0%;
+.css {
+   width: 30%;
+   background-color: #629999;
 }
 
-.button-btn-sidebar{
-   border: 0!important;
-   background:transparent;
+.js {
+   width: 10%;
+   background-color: #629999;
+}
+
+.php {
+   width: 10%;
+   background-color: #629999;
+}
+
+.symfony {
+   width: 10%;
+   background-color: #629999;
+}
+
+#projets h2 {
+   margin-bottom: 5%;
+   margin-top: 15%;
+}
+
+
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.container-grid {
+   display: grid;
+   width: 80%;
+   grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-rows: 1fr 1fr;
+   margin: auto;  
+}
+
+.item {
+   display: flex;
+   padding: 100px;
+   background-color: rgb(255, 255, 255);
+   justify-items: center;   
+}
+
+div.item {
+   height: 100%;
+   width: 100%;
+   padding: 2%;
+   color: black;
+   justify-content: center;
+   align-items: center;   
+} 
+
+.button-btn-sidebar {
+   border: 0 !important;
+   background: transparent;
    padding: 1px;
    height: 100px;
    width: 20px;
-   display:flex;
-   justify-content:center;    
+   display: flex;
+   justify-content: center;
 }
+
 .sidebar {
-   position:fixed;
-   bottom: 130px;
-   right: 48px;        
+   position: fixed;
+   bottom: 120px;
+   right: 28px;
+   
 }
-.button{
+
+.button {
    background: transparent;
    border-style: none;
-   text-decoration:none;
+   text-decoration: none;
 }
-ul{
+
+ul {
    list-style-type: none;
 }
