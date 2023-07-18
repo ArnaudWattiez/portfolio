@@ -1,186 +1,303 @@
 
 /*appel elements HTML par nom de balise
 */
-@font-face 
-   {font-family: "Roboto"; 
-      src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
-      src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); }
-      
-      @font-face 
-      {font-family: "Askan Black"; 
-         src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot"); src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff") format("woff"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.svg#Askan Black") format("svg"); }
-      
-         @font-face 
-         {font-family: "SanchezSlabW03-BlackIt"; 
-            src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot"); 
-            src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.svg#SanchezSlabW03-BlackIt") format("svg"); }
-     
-         /*selecteur*/
-body  {
-   min-height:100vh;
-   padding: 10;
-   background: rgb(0, 0, 0);
-   padding: 20px;
-   margin: 10px;
-   }
-/*entete*/
-header {
-   height: 20vh;
-   display:block;
-   padding: 10px ;
-   position: relative;
+*{
+   margin: 0;
+   padding: 0;
 }
+@font-face {
+   font-family: "Roboto";
+   src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
+   src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg");
+}
+
+@font-face {
+   font-family: "Askan Black";
+   src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot");
+   src: url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.woff") format("woff"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fff307eb7ef0ea2c524e497133afdd9a.svg#Askan Black") format("svg");
+}
+
+@font-face {
+   font-family: "SanchezSlabW03-BlackIt";
+   src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot");
+   src: url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d98eae9a1baa9b2f6df9be6a442e576.svg#SanchezSlabW03-BlackIt") format("svg");
+}
+
+/*selecteur*/
+body {
+   min-height: 100vh;
+   padding: 5%;
+   background: #303030;
+   padding: 0px;
+   margin: 10px;
+}
+
+/*entete*/
+#header{
+height: 15%;
+width: 100%;
+display:flex;
+position: fixed;
+background-color:#303030 !important;
+right:0;
+left:0;
+top:0;
+} 
 .logo {
    text-decoration: none;
-   font-size:x-large;
-   color: #ffffff;
+   font-size: x-large;
    font-family: "Roboto";
    position: fixed;
    top: 1%;
-   left: 0%;
-   
+   left: 1%;
 }
-.logo a{
+
+.logo a {
    text-decoration: none;
    color: #ffffff;
-   padding: 20%;
-  
 }
-ul#horizontal-list{
-   list-style:none;
-   word-spacing:20px; 
+
+ul#horizontal_list {
+   list-style: none;
+   word-spacing: 15px;
    font-size: 80%;
    color: #ffffff;
-   font-family:"roboto" ,"Askan Black", "Helvetica, sans-serif";
+   font-family: "roboto", "Askan Black", "Helvetica, sans-serif";
    margin-left: 60%;
    position: fixed;
    padding: 1%;
    margin-top: 3%;
+   
 }
 
-ul#horizontal-list li{
-   display: inline-block; 
+ul#horizontal_list li {
+   display: inline-block;
    bottom: 10%;
 }
-ul#horizontal-list  li a{
+
+ul#horizontal_list li a {
    text-decoration: none;
    color: #ffffff;
    display: inline-block;
    font-size: 1.2em;
 }
 
-.tittle--big {
+.tittle__big {
    height: 100px;
-   font-size: 2.0em;
-   color:#ffffff;
-   font-family:"roboto" ,"Askan Black", "Helvetica, sans-serif";
-   display: block;
-   position:relative;
-   padding-top: 15%;
-   left: 2%;  
+   font-size: 2.5em;
+   color: #ffffff;
+   font-family: "roboto";
+   display:relative;
+   left: 20%;
    margin-bottom: 3%;
-
-}
-
-.paragraphe {
-  height: 15vh;
-   color: #ffffff;
-   font-family: "roboto";
-   padding: 0%;
-   font-size :1.30rem;
-   display: block;
-   position:block; 
-   margin-left: 5%;
-   margin-top: 7%;
-}
-
-h1 {
-   color:#ffffff;
-   position: block;
-   font-family: "Roboto";
-   padding: 1%;
-   margin-bottom: 7%;
-   font-size: 1.8em; 
-   margin-left: 40%;
-}
-#A-propos h1{
-   margin-top: 10%;
-   margin-bottom: 1%;
-}
-#A-propos p{
-height: 40px;
-padding: 2%;
-margin-bottom:10%;
-display: block;
-position: relative;
-margin-left: 6%;
-font-size: 1.30rem;   
-}
-h2{
-   color: #ffffff;
-   font-family: "roboto";
-   padding: 2%;
-   font-size: 1.3em;
    margin-left: 2%;
+   margin-top: 25%;
 }
-#services
-{
-   padding-top: 10%;
+.paragraphe p{
+   color:#ffffff;
+   font-family: "roboto";
+   font-size: 1.5em;
+   margin-left:5% ;
+}
+#A_propos h1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 2.4rem;
+   margin-top: 30%;
+   color: #ffffff;
+   font-family:"roboto";
+}
+#A_propos p{
+   height: 40px;
+   padding: 0%;
+   margin-bottom: 15%;
+   margin-top: 5%;
+   display: relative;
+   margin-left: 10%;
+   font-size: 1.70rem;
+   color: #ffffff;
+   font-family:"roboto";
+
+}
+div#Compétences h1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   font-size: 2.4rem;
+   color: #ffffff;
+   font-family:"roboto";
+   margin-top: 20%;
+   
+   
+}
+
+span {
+   display: flex;
+   flex-direction: column;
+   bottom: 0px;
+   font-family: "roboto";
+   font-size: 1.0em;
+   margin-left: 10%;
+}
+
+#flexbox {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   color:#ffffff;
+   font-family: "roboto";
+}
+#flex_box h2{
+   color:#ffffff;
+   font-family: "roboto";
+   text-align: center;
+   margin-bottom: 1%;
+   margin-left: 10%;
+}
+#flex_box img{
+   margin-left: 10%;
+   border-radius: 10px;
+}
+
+div#langage {
+   width: 40%;
+   height: 10%;
+   float: left;
+   margin-right: 0%;
+   margin-left: 7%;
+   color: #ffffff;
+   font-family:"roboto";
+   
+}
+
+#langage p {
+   font-size: 1.2em;
+   margin-top: 10px;
+   margin-left: 50px ;
+   text-align: start;
+   color: #ffffff;
+   font-family:"roboto";
+}
+
+#langage h2 {
+   margin-bottom: 10%;
+   text-align: center;
   
 }
-span {
-   display:flex;
+
+.skill {
+   width: 10%;
+   padding-top: 2px;
+   margin-bottom: 5%;
+   border-radius: 40px;
+   text-align: center;
+}
+
+.html {
+   width: 60%;
+   background-color: #629999;
+}
+
+.css {
+   width: 40%;
+   background-color: #629999;
+}
+
+.js {
+   width: 30%;
+   background-color: #629999;
+}
+
+.php {
+   width: 30%;
+   background-color: #629999;
+}
+
+.symfony {
+   width: 30%;
+   background-color: #629999;
+}
+div#projets h1 {
+   display: flex;
    flex-direction: column;
-   font-family: "roboto";
-   font-size: 0.9em;
-
+   align-items: center;
+   font-size: 2.4rem;
+   margin-top: 10%;
+   color: #ffffff;
+   font-family:"roboto";
+   list-style-type: none; 
 }
-#language p{
-   font-size: 1em;
-   margin-top:110px;
-   text-align:start; 
-   }
+
+
+#projets h2 {
+   margin-bottom: 10%;
+   margin-top: 15%;
+   margin-left: 10%;
+   color: #ffffff;
+   font-family:"roboto";
+}
+.container-grid{
+   height:30%;
+   width:70%;  
+   display: grid;
+   grid-template-columns:  1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-column-gap: 90px;
+   grid-row-gap: 30%;
+   margin:auto;
+   color:black;
+   justify-content: center; 
+   font-family:"roboto";
+  
    
+}
+.container-grid a{
+   text-decoration: none;
+   color:black;
+}
+div.item {
+   height: 150%;
+   width: 100%;
+   padding: 0%;
+   justify-content: center;
+   align-items: center;
+   font-family: "roboto";
+   font-size: 1.3em;
+}
+.item {
+   display: flex;
+   padding: 100px;
+   background-color: rgb(255, 255, 255);
+   justify-items: center;
+   margin-bottom: 10%;       
+}
 
-.skill{
-width: 100%;
-  padding-top: 10px;  
-  color: rgb(255, 250, 250);
-  margin-bottom: 0%; 
-  border-radius: 10px 40px 40px 10px; 
-  text-align: center;
-}
-.html {width: 50%; background-color: #691b63; 
-}
-.css{width: 30%; background-color: #2e3894;
-}
-.js{width: 1%; background-color: rgb(87, 155, 90);
-}
-.php{width: 10%; background-color: #a87272;
-}
-.symfony{width: 1%; background-color: #60612e;
-}
 
-.button-btn-sidebar{
-   border: 0!important;
-   background:transparent;
+.button-btn-sidebar {
+   border: 0 !important;
+   background: transparent;
    padding: 1px;
    height: 100px;
    width: 20px;
-   display:flex;
-   justify-content:center;
-   background: transparent; 
-   
+   display: flex;
+   justify-content: center;
 }
 .sidebar {
-   position:fixed;
-   bottom: 130px;
-   right: 48px;
-   background: transparent;  
-    
+   position: fixed;
+   bottom: 120px;
+   right: 28px;   
 }
-.button{
+.button {
    background: transparent;
    border-style: none;
-   text-decoration:none;
+   text-decoration: none;
+}
+ul {
+   list-style-type: none;
+}
+footer{
+   margin-bottom: 15%;  
 }
