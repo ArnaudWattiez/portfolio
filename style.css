@@ -166,7 +166,6 @@ div#langage {
    width: 40%;
    height: 10%;
    float: left;
-   margin-right: 0%;
    margin-left: 7%;
    color: #ffffff;
    font-family:"roboto";
@@ -185,9 +184,8 @@ div#langage {
 #langage h2 {
    margin-bottom: 10%;
    text-align: center;
-  
+   margin-right: 50%;  
 }
-
 .skill {
    width: 10%;
    padding-top: 2px;
