@@ -1,10 +1,10 @@
-
 /*appel elements HTML par nom de balise
 */
-*{
+* {
    margin: 0;
    padding: 0;
 }
+
 @font-face {
    font-family: "Roboto";
    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
@@ -25,7 +25,10 @@
 
 /*selecteur*/
 body {
+   width: 100%;
+   height: 100%;
    min-height: 100vh;
+   min-width: 100vh;
    padding: 5%;
    background: #303030;
    padding: 0px;
@@ -33,16 +36,18 @@ body {
 }
 
 /*entete*/
-#header{
-height: 15%;
-width: 100%;
-display:flex;
-position: fixed;
-background-color:#303030 !important;
-right:0;
-left:0;
-top:0;
-} 
+#header {
+   height: 17%;
+   width: 100%;
+   display: flex;
+   position: fixed;
+   background-color: #303030 !important;
+   right: 0;
+   left: 0;
+   top: 0;
+   z-index: 3;
+}
+
 .logo {
    text-decoration: none;
    font-size: x-large;
@@ -51,7 +56,6 @@ top:0;
    top: 1%;
    left: 1%;
 }
-
 .logo a {
    text-decoration: none;
    color: #ffffff;
@@ -67,7 +71,7 @@ ul#horizontal_list {
    position: fixed;
    padding: 1%;
    margin-top: 3%;
-   
+
 }
 
 ul#horizontal_list li {
@@ -87,18 +91,20 @@ ul#horizontal_list li a {
    font-size: 2.5em;
    color: #ffffff;
    font-family: "roboto";
-   display:relative;
+   display: relative;
    left: 20%;
    margin-bottom: 3%;
    margin-left: 2%;
    margin-top: 25%;
 }
-.paragraphe p{
-   color:#ffffff;
+
+#paragraphe p {
+   color: #ffffff;
    font-family: "roboto";
    font-size: 1.5em;
-   margin-left:5% ;
+   margin-left: 5%;
 }
+
 #A_propos h1 {
    display: flex;
    flex-direction: column;
@@ -106,9 +112,10 @@ ul#horizontal_list li a {
    font-size: 2.4rem;
    margin-top: 30%;
    color: #ffffff;
-   font-family:"roboto";
+   font-family: "roboto";
 }
-#A_propos p{
+
+#A_propos p {
    height: 40px;
    padding: 0%;
    margin-bottom: 15%;
@@ -117,9 +124,10 @@ ul#horizontal_list li a {
    margin-left: 10%;
    font-size: 1.70rem;
    color: #ffffff;
-   font-family:"roboto";
+   font-family: "roboto";
 
 }
+
 div#Compétences h1 {
    display: flex;
    flex-direction: column;
@@ -128,10 +136,44 @@ div#Compétences h1 {
    margin-bottom: 10%;
    font-size: 2.4rem;
    color: #ffffff;
-   font-family:"roboto";
+   font-family: "roboto";
    margin-top: 20%;
-   
-   
+}
+
+
+#flexbox {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   color: #ffffff;
+   font-family: "roboto";
+}
+
+#flex_box h2 {
+   color: #ffffff;
+   font-family: "roboto";
+   text-align: center;
+   margin-bottom: 1%;
+   margin-left: 10%;
+}
+
+#flex_box img {
+   position: relative;
+   width: 52%;
+   height: 90%;
+   border-radius: 10px;
+   max-width: 100%;
+}
+
+div#langage {
+   width: 40%;
+   height: 25%;
+   float: left;
+   margin-left: 3%;
+   color: #ffffff;
+   font-family: "roboto";
 }
 
 span {
@@ -140,54 +182,24 @@ span {
    bottom: 0px;
    font-family: "roboto";
    font-size: 1.0em;
-   margin-left: 10%;
-}
-
-#flexbox {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   color:#ffffff;
-   font-family: "roboto";
-}
-#flex_box h2{
-   color:#ffffff;
-   font-family: "roboto";
-   text-align: center;
-   margin-bottom: 1%;
-   margin-left: 10%;
-}
-#flex_box img{
-   margin-left: 10%;
-   border-radius: 10px;
-}
-
-div#langage {
-   width: 40%;
-   height: 10%;
-   float: left;
-   margin-left: 7%;
-   color: #ffffff;
-   font-family:"roboto";
-   
 }
 
 #langage p {
    font-size: 1.2em;
    margin-top: 10px;
-   margin-left: 50px ;
    text-align: start;
    color: #ffffff;
-   font-family:"roboto";
+   font-family: "roboto";
 }
 
 #langage h2 {
    margin-bottom: 10%;
    text-align: center;
-   margin-right: 50%;  
+   margin-right: 50%;
 }
+
 .skill {
-   width: 10%;
+   width: 50%;
    padding-top: 2px;
    margin-bottom: 5%;
    border-radius: 40px;
@@ -196,6 +208,7 @@ div#langage {
 
 .html {
    width: 60%;
+   height: 10%;
    background-color: #629999;
 }
 
@@ -218,6 +231,7 @@ div#langage {
    width: 30%;
    background-color: #629999;
 }
+
 div#projets h1 {
    display: flex;
    flex-direction: column;
@@ -225,8 +239,8 @@ div#projets h1 {
    font-size: 2.4rem;
    margin-top: 10%;
    color: #ffffff;
-   font-family:"roboto";
-   list-style-type: none; 
+   font-family: "roboto";
+   list-style-type: none;
 }
 
 
@@ -235,27 +249,28 @@ div#projets h1 {
    margin-top: 15%;
    margin-left: 10%;
    color: #ffffff;
-   font-family:"roboto";
+   font-family: "roboto";
 }
-.container-grid{
-   height:30%;
-   width:70%;  
+
+.container-grid {
+   height: 30%;
+   width: 70%;
    display: grid;
-   grid-template-columns:  1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    grid-column-gap: 90px;
    grid-row-gap: 30%;
-   margin:auto;
-   color:black;
-   justify-content: center; 
-   font-family:"roboto";
-  
-   
+   margin: auto;
+   color: black;
+   justify-content: center;
+   font-family: "roboto";
 }
-.container-grid a{
+
+.container-grid a {
    text-decoration: none;
-   color:black;
+   color: black;
 }
+
 div.item {
    height: 150%;
    width: 100%;
@@ -265,14 +280,14 @@ div.item {
    font-family: "roboto";
    font-size: 1.3em;
 }
+
 .item {
    display: flex;
    padding: 100px;
    background-color: rgb(255, 255, 255);
    justify-items: center;
-   margin-bottom: 10%;       
+   margin-bottom: 10%;
 }
-
 
 .button-btn-sidebar {
    border: 0 !important;
@@ -283,19 +298,23 @@ div.item {
    display: flex;
    justify-content: center;
 }
+
 .sidebar {
    position: fixed;
    bottom: 120px;
-   right: 28px;   
+   right: 28px;
 }
+
 .button {
    background: transparent;
    border-style: none;
    text-decoration: none;
 }
+
 ul {
    list-style-type: none;
 }
-footer{
-   margin-bottom: 15%;  
+
+footer {
+   margin-bottom: 15%;
 }
