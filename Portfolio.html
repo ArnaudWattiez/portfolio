@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -11,28 +11,28 @@
         <header>
             <div id="header">
                 <div class="logo">
-                    <a href="Accueil.html">Portfolio</a>
+                    <a href="Portfolio.html">Portfolio</a>
 
                     <ul id="horizontal_list">
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="./Portfolio.html">Accueil</a></li>
                         <li><a href="#A_propos">Presentation</a></li>
-                        <li><a href="#Compétences">Compétences</a></li>
+                        <li><a href="#Competences">Compétences</a></li>
                         <li><a href="#Projets">Projets</a></li>
                         <li><a href="mailto:arnaud.wattiez.pro@gmail.com">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-
+    <div id="paragraphe">
         <div class="tittle tittle__big"> Bienvenue sur mon Portfolio. </div>
 
-        <div id="paragraphe">
+       
             <p> Vous pouvez découvrir mes projets ou en apprendre un peu plus sur moi.</p>
         </div>
         
-        <div id="A_propos">
+       <div id="A_propos">
             <h1>A propos</h1>
-        
+         
             <p>Bonjour, Je m'appelle Arnaud Wattiez,en formation developpeur web et web mobile.<br>
                 Auparavant, J'ai effectué des stages en magasins de prêt-à-porter (kiabi,brice) et quelques mois en tant
                 que teleconseiller (orange/canal+) ce qui m’a permis d’acquérir de très bonnes compétences telles que
@@ -40,38 +40,50 @@
                 Le Développement Web, domaine qui m’intéressait depuis quelques années, J'ai décidé de suivre la
                 formation Developpeur Web et web mobile au sein de AFCI de Liévin.</p></br>
        
-</div>
-        <section id="flex_box">
-            <div id="Compétences">
+    </div>
+
+    <div id="Competences">
                 <h1>Compétences</h1>
-                <div id="langage">
+                
+            
+            <div id="langage">
                     <h2>Langages</h2>
 
+                
                     <p>Html</p>
-                    <span class="skill html">50%</span>
+                <div id="HTML"><span>50%</span></div>
+
                     <p>Css</p>
-                    <span class="skill css">30%</span>
+                <div id="CSS"><span>30%</span></div>
+                
                     <p>JS</p>
-                    <span class="skill js">10%</span>
+                <div id="JS"><span>10%</span></div>
+                
+               
                     <p>PHP</p>
-                    <span class="skill php">10%</span>
+                 <div id="PHP"><span>10%</span></div> 
+                 
+                 
                     <p>Symfony</p>
-                    <span class="skill symfony">10%</span>
-                </div>
+                <div id="Symfony"><span>10%</span></div> 
+                 
             </div>
+                
+                <div id="CV">  
+                   <h2>CV</h2>
 
-            <h2>CV</h2>
-            <a href="img/CV.png"><img src="img/CV.png" alt="Image"></a>
+            <a href="img/CV.png"><img src="img/CV.png" alt="Image" style="width:500px;height:600px"></a>   
             </div>
-        </section>
-
-        <div id="Projets">
+            
+        </div> 
+         <div id="Projets">
             <h1>Mes Projets</h1>
+           
             <h2>Les projets en cours :</h2>
 
-            <div class="container-grid">
+            <div class="bloc-grid">
 
-                <div class="item"><a href="Portfolio.html"><strong>Portfolio</strong></a></div>
+                <div class="item"><a href="Portfolio.html"target="_blank"><strong>Portfolio</strong></a></div>
                 <div class="item">Projet2</div>
                 <div class="item">Projet3</div>
                 <div class="item">Projet4</div>
@@ -81,17 +93,18 @@
         <div class="sidebar">
             <div class="button-btn-sidebar">
                 <ul>
-                    <li><button class="button"><a href="mailto:arnaud.wattiez.pro@gmail.com"><img src="img/gmail.png"
+                    <li><button class="button"><a href="mailto:arnaud.wattiez.pro@gmail.com"target="_blank"><img src="img/gmail.png"
                                     alt="Image" height="60" width="70"></a></li></button>
-                    <li><button class="button"><a href=".https://www.linkedin.com/in/arnaud-wattiez-0852a6205"><img
+                    <li><button class="button"><a href="https://www.linkedin.com/in/arnaud-wattiez-0852a6205"target="_blank"><img
                                     src="img/linkedin.png" alt="Image" height="70" width="70"></a></li></button>
-                    <li><button class="button"><a href="https://github.com/ArnaudWattiez/portfolio/tree/dev"><img
+                    <li><button class="button"><a href="https://github.com/ArnaudWattiez/portfolio/tree/dev"target="_blank"><img
                                     src="img/github.png" alt="Image" height="70" width="70"></a></li></button>
                 </ul>
             </div>
         </div>
         <footer>
         </footer>
+    
     </body>
 
     </html>

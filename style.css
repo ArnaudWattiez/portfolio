@@ -26,15 +26,18 @@ body {
    height: 100%;
    min-height: 100vh;
    min-width: 100vh;
-   padding: 5%;
    background: #303030;
    padding: 0px;
    margin: 10px;
+   overflow-x: hidden;
+}
+div:target {
+   padding-top: 15em; 
 }
 
 /*entete*/
 #header {
-   height: 16%;
+   height: 15%;
    width: 100%;
    display: flex;
    position: fixed;
@@ -43,11 +46,6 @@ body {
    left: 0;
    top: 0;
    z-index: 3;
-}
-
-.target {
-   padding-top: 50em;
-   margin-top: -20em;
 }
 
 .logo {
@@ -71,7 +69,6 @@ ul#horizontal_list {
    font-family: "roboto", "Askan Black", "Helvetica, sans-serif";
    margin-left: 60%;
    position: fixed;
-   padding: 1%;
    margin-top: 3%;
 }
 
@@ -83,35 +80,40 @@ ul#horizontal_list li a {
    text-decoration: none;
    color: #ffffff;
    display: inline-block;
-   font-size: 1.2em;
+   font-size: 1.1em;
 }
-
 .tittle__big {
-   height: 100px;
+   height: auto;
    max-height: 50%;
    font-size: 2.5em;
    color: #ffffff;
    font-family: "roboto";
-   display: relative;
+   display:block;
    left: 20%;
    margin-bottom: 3%;
    margin-left: 2%;
-   margin-top: 25%;
+   margin-top: 25%;  
+ } 
+#paragraphe{
+height: auto;
+margin-bottom: 20%;
+margin-top: 25%;
 }
-
-#paragraphe p {
+#paragraphe p{
+   height: auto;
    color: #ffffff;
    font-family: "roboto";
    font-size: 1.5em;
-   margin-left: 5%;
-   margin-bottom: 50%;
+   margin-left: 5%;   
 }
-
+#A_propos{
+   display: block;
+   height: auto;
+   width: 100%;
+   margin-bottom: 20%;
+}
 #A_propos p {
-   height: 40px;
-   padding: 0%;
-   margin-bottom: 17%;
-   margin-top: 5%;
+   height: auto; 
    display: relative;
    margin-left: 10%;
    font-size: 1.70rem;
@@ -119,118 +121,84 @@ ul#horizontal_list li a {
    font-family: "roboto";
    max-width: 80%;
    text-align: center;
-   margin-bottom: 20%;
-   min-block-size: 10%;
 }
-
 h1 {
-   display: flex;
+   display: block;
    flex-direction: column;
    align-items: center;
-   margin-top: 10%;
-   margin-bottom: 10%;
-   font-size: 2.4rem;
    color: #ffffff;
    font-family: "roboto";
-   margin-top: 20%;
-   scroll-margin-top: 10vh;
-}
-
-#flexbox {
-   height: 100%;
    width: 100%;
-   display: flex;
-   justify-content: center;
-   position: relative;
-   color: #ffffff;
-   font-family: "roboto";
-}
-
-#flex_box h2 {
-   color: #ffffff;
-   font-family: "roboto";
    text-align: center;
-   margin-bottom: 1%;
-   margin-left: 10%;
 }
-
-#flex_box img {
-   position: relative;
-   width: 52%;
-   height: 90%;
-   border-radius: 10px;
-   max-width: 100%;
-   display: flex
-}
-
-div#langage {
-   width: 40%;
-   height: 25%;
-   float: left;
-   margin-left: 3%;
-   color: #ffffff;
+#Competences{
+   display: block;
    font-family: "roboto";
+   height: auto;
+   width: 100%;
+   margin-bottom: 20%;
+}
+#Competences h2{
+color: #ffffff;
+text-align: center;
+height: auto;
+}
+#Competences p{
+width: 30%;
+color: #ffffff;
+}
+#langage{
+   display: inline-block;
+   vertical-align:top;
+   width: 45%;  
+}
+#CV{
+   display: inline-block;
+   vertical-align:top ;
+   width: 45%;
+   text-align: center; 
 }
 
-span {
-   display: flex;
-   flex-direction: column;
-   bottom: 0px;
-   font-family: "roboto";
-   font-size: 1.0em;
-}
-
-#langage p {
-   font-size: 1.2em;
-   margin-top: 10px;
-   text-align: start;
-   color: #ffffff;
-   font-family: "roboto";
-}
-
-.skill {
+#HTML{
+   background-color:#629999 ;
    width: 50%;
-   padding-top: 2px;
-   margin-bottom: 5%;
-   border-radius: 40px;
+   color: #ffffff;
+   text-align: center;
+   
+}
+#CSS{
+   background-color:#629999 ;
+   width: 30%;
+   color: #ffffff;
    text-align: center;
 }
-
-.html {
-   width: 60%;
-   height: 10%;
-   background-color: #629999;
+#JS{
+   background-color:#629999 ;
+   width: 10%;
+   color: #ffffff;
+   text-align: center;
 }
-
-.css {
-   width: 40%;
-   background-color: #629999;
+#PHP{
+   background-color:#629999 ;
+   width: 10%;
+   color: #ffffff;
+   text-align: center;
 }
-
-.js {
-   width: 30%;
-   background-color: #629999;
+#Symfony{
+   background-color:#629999 ;
+   width: 10%;
+   color: #ffffff;
+   text-align: center;
 }
-
-.php {
-   width: 30%;
-   background-color: #629999;
-}
-
-.symfony {
-   width: 30%;
-   background-color: #629999;
-}
-
-#projets h2 {
+#Projets h2{
    margin-bottom: 10%;
-   margin-top: 15%;
+   margin-top: 3%;
    margin-left: 10%;
    color: #ffffff;
    font-family: "roboto";
 }
 
-.container-grid {
+.bloc-grid {
    height: 30%;
    width: 70%;
    display: grid;
@@ -244,7 +212,7 @@ span {
    font-family: "roboto";
 }
 
-.container-grid a {
+.bloc-grid a {
    text-decoration: none;
    color: black;
 }
