@@ -164,31 +164,35 @@ color: #ffffff;
    width: 50%;
    color: #ffffff;
    text-align: center;
-   
+   border-radius: 30px;
 }
 #CSS{
    background-color:#629999 ;
    width: 30%;
    color: #ffffff;
    text-align: center;
+   border-radius: 30px;
 }
 #JS{
    background-color:#629999 ;
    width: 10%;
    color: #ffffff;
    text-align: center;
+   border-radius: 30px;
 }
 #PHP{
    background-color:#629999 ;
    width: 10%;
    color: #ffffff;
    text-align: center;
+   border-radius: 30px;
 }
 #Symfony{
    background-color:#629999 ;
    width: 10%;
    color: #ffffff;
    text-align: center;
+   border-radius: 30px;
 }
 #Projets h2{
    margin-bottom: 10%;
@@ -204,8 +208,8 @@ color: #ffffff;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
-   grid-column-gap: 90px;
-   grid-row-gap: 30%;
+   grid-column-gap: 100px;
+   grid-row-gap: 50px;
    margin: auto;
    color: black;
    justify-content: center;
