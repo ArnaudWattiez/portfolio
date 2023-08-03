@@ -10,27 +10,33 @@
         
 
     <body>
+    <div class="slide-in">
         <header>
             <div id="header">
                 <div class="logo">
                     <a href="Portfolio.html">Portfolio</a>
+                    
 
                     <ul id="horizontal_list">
                         <li><a href="./Portfolio.html">Accueil</a></li>
                         <li><a href="#A_propos">Presentation</a></li>
                         <li><a href="#Competences">Compétences</a></li>
                         <li><a href="#Projets">Projets</a></li>
-                        <li><a href="mailto:arnaud.wattiez.pro@gmail.com">Contact</a></li>
+                        <li><a href="#formulaire">Contact</a></li>
                     </ul>
+               
                 </div>
-            </div>
+            </div> 
+        </div>    
         </header>
+    <div class="slide-in-bienvenu">
     <div id="paragraphe">
         <div class="tittle tittle__big"> Bienvenue sur mon Portfolio. </div>
 
        
             <p> Vous pouvez découvrir mes projets ou en apprendre un peu plus sur moi.</p>
         </div>
+    </div>
         
        <div id="A_propos">
             <h1>A propos</h1>
@@ -92,14 +98,32 @@
                 <div class="item">Projet5</div>
             </div>
         </div>
+        <h1>Contact</h1>
+         
         <div id="formulaire">
-            
+            <div class="form-box">
+            <h2>Formulaire</h2>
 
+            <form action="mail.to">
+                <div class="box-input">
+                    <input type="text" required>
+                    <label>Prenom</label>
+                </div>
 
-
-
-
-
+                <div class="box-input">
+                    <input type="text" required>
+                    <label>Nom</label>
+                </div>
+                    <div class="box-input">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>                        
+                
+                </div>  
+                <button type="submit" id="btn">Envoyer</button>
+            </form>
+            </div>
+            </div> 
         </div>
         <div class="sidebar">
             <div class="button-btn-sidebar">
@@ -113,9 +137,12 @@
                 </ul>
             </div>
         </div>
+    
         <footer>
         </footer>
-    <script src ="animation.js"></script>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
     </html>
