@@ -37,49 +37,19 @@ div:target {
    padding-top: 17em; 
 }
 
-#header {
-   width: 100%;
-   display: flex;
-   position: fixed;
-   background-color: #303030 !important;
-   right: 0;
-   left: 0;
-   top: 0;
-   z-index: 3;
-}
-@media only screen and (max-width: 980px) {
-   #header {
-     font-size: 50%;
-      height: 14%;
-   }
-}
-@media only screen and (max-width: 767px) {
-   header {
-      min-width: 50%;
-     font-size: 60%;
-     height: 10%;
-
-   }
-}
-@media only screen and (max-width: 575px){
-
-   header{
-font-size: 50%;
-height: 7%;
-   }
-}
 h2{
-   padding: 2%;
-   text-align: center;
+   padding: 5%;
+   text-align: center;  
 }
+
 h1 {
    display: block;
-   flex-direction: column;
-   align-items: center;
+   margin-left: 19px;
    color: #ffffff;
    font-family: "roboto";
    width: 100%;
    text-align: center;
+
 }
 .logo {
    font-size: x-large;
@@ -91,16 +61,20 @@ h1 {
 .logo a {
    text-decoration: none;
    color: #ffffff;
+   display: fixed;
 }
 ul#horizontal_list {
+   max-width: 50%;
+   /* width: 100%; */
    list-style: none;
    word-spacing: 15px;
-   font-size: 80%;
+   font-size: 70%;
    color: #ffffff;
    font-family: "roboto", "Askan Black", "Helvetica, sans-serif";
-   margin-left: 60%;
+   /* margin-block-end: auto; */
    position: fixed;
-   margin-top: 3%;
+   margin: 3%;
+   left: 60%;
 }
 
 ul#horizontal_list li {
@@ -110,7 +84,8 @@ ul#horizontal_list li a {
    text-decoration: none;
    color: #ffffff;
    display: inline-block;
-   font-size: 1.1em;
+   font-size: 1.2em;
+   
 }
 .tittle__big {
    height: auto;
@@ -130,11 +105,12 @@ margin-bottom: 23%;
 margin-top: 25%;
 }
 #paragraphe p{
-   height: auto;
+   height: 100%;
    color: #ffffff;
    font-family: "roboto";
-   font-size: 1.5em;
-   margin-left: 5%;   
+   font-size: 1.4em;
+   text-align: center; 
+   margin-left: 30px;  
 }
 #A_propos{
    display: block;
@@ -147,16 +123,16 @@ margin-top: 25%;
    height: auto; 
    display: relative;
    margin-left: 10%;
-   font-size: 1.70rem;
+   font-size: 1.5rem;
    color: #ffffff;
    font-family: "roboto";
-   max-width: 80%;
+   max-width: 200%;
    text-align: center;
 }
 #Competences{
    display: block;
    font-family: "roboto";
-   height: auto;
+   height: 100%;
    width: 100%;
    margin-bottom: 20%;
    padding-top: 8em; 
@@ -164,15 +140,30 @@ margin-top: 25%;
 #Competences h2{
 color: #ffffff;
 text-align: center;
-height: auto;
+height: 100%;
+display: inline-block;
+position: relative;
+left: 50px;
+
 }
 #Competences p{
 width: 30%;
 color: #ffffff;
 }
+#langage h2{
+color: #ffffff;
+text-align: center;
+height: 100%;
+display: inline-block;
+position: relative;
+right:100px;
+
+
+
+}
 #langage{
    display: inline-block;
-   width: 45%;  
+   width: 49%;  
 }
 #Projets{
    padding-top: 8em;
@@ -181,7 +172,7 @@ color: #ffffff;
    display: inline-block;
    vertical-align:top ;
    width: 45%;
-   text-align: center; 
+   text-align: center!important; 
 }
 
 #HTML{
@@ -293,30 +284,47 @@ ul {
 }
 #formulaire{
    position:relative;
-   margin-left: 30.5vw;
+   margin-left: 28vh;
    width: 400px;
-   height: 440px;
+   height: 480px;
    border: 2px solid ;
    border-radius: 30px;
    padding: 0;
-   display: flex;
-   justify-content: center;
+   display: flex; 
    align-items: center;
+}
+#formulaire h2{
+   color: #ffffff;
+   text-align: center;
+   height: 100%;
+   display: inline-block;
+   position: relative;
+   left: 55px;
+   margin-left: 10px;
+   margin-bottom: 0%;
+   margin-top: 0%;
+ 
 }
 #formulaire .form-box{
    width: 100%;
    padding: 40px;  
 }
-#formulaire h2 {
-text-align: center;
+#formulaire h3 {
 border-style: solid;
+font-size: 1.4em;
+display:flex;
+height: 40px;
+align-items: center;
+justify-content: center;
 }
 .box-input{
 position:relative ;
 width: 100%;
 height: 50px;
-border-bottom: 2px solid #ffffff;
+border-bottom: 1px solid #ffffff;
 margin: 30px 0;
+padding: 1px;
+font-family: "roboto";
 }
 .box-input label{
    position: absolute;
@@ -326,8 +334,8 @@ margin: 30px 0;
    font-size: 1em;
    font-weight: 500;
    pointer-events: none;
-   transition: .3s;
-
+   transition: 0.2s;
+   
 }
 .box-input input:focus~label,
 .box-input input:valid~label{
@@ -341,12 +349,14 @@ margin: 30px 0;
    border: none;
    outline: none;
    color: #ffffff;
+   font-size: 1em;
+  
 }
 .box-input .icon {
    position: absolute;
    right: 8px;
-   font-size: 1.2em;
-   line-height: 70px;
+   font-size: 1.4em;
+   line-height: 65px;
 }
 
 #btn{
@@ -366,19 +376,28 @@ footer {
    padding: 7%;
 }
 .slide-in {
-   max-width: 900px;
-
+   max-height: 100%;
+   max-width: 100%;
    padding: 10px;
    transform: translateX(-100%);
    opacity: 0;
    transition: transform 0.6s ease-in-out,
    opacity 0.6s ease-in-out;
+   height: 13%;
+   display: flex;
+   position: fixed;
+   background-color: #303030 !important;
+   right: 0;
+   left: 0;
+   top: 0;
+   z-index: 3;
 }
 .slide-in.active {
    transform: translateX(0%);
    opacity: 1;
 }
 .slide-in-bienvenu {
+   margin-top: 10%;
    max-width: 700px;
    padding: 10px;
    transform: translateX(-100%);
@@ -387,6 +406,77 @@ footer {
    opacity 0.9s ease-in-out;
 }
 .slide-in-bienvenu.active {
+   transform: translateX(0%);
+   opacity: 1;
+}
+.slide-in-apropos{
+   max-width: 700px;
+   padding: 10px;
+   margin-left:170px ;
+   transform: translateX(-100%);
+   opacity: 0;
+   transition: transform 1.5s ease-in-out,
+   opacity 1.5s ease-in-out;
+}
+.slide-in-apropos.active {
+   transform: translateX(0%);
+   opacity: 1;
+
+}.slide-in-competences{
+   max-width: 700px;
+   margin-left: 170px;
+   align-items: center;
+   transform: translateX(-100%);
+   opacity: 0;
+   transition: transform 1.5s ease-in-out,
+   opacity 1.5s ease-in-out;
+}
+
+.slide-in-competences.active {
+   transform: translateX(0%);
+   opacity: 1;
+}
+.slide-in-projets{
+   max-width: 700px;
+   margin-left: 180px;
+   align-items: center;
+   transform: translateX(-100%);
+   opacity: 0;
+   transition: transform 1.5s ease-in-out,
+   opacity 1.5s ease-in-out;
+}
+
+.slide-in-projets.active {
+   transform: translateX(0%);
+   opacity: 1;
+}
+.slide-in-formulaire{
+   max-width: 700px;
+   margin-left: 120px;
+   align-items: center;
+   transform: translateX(-100%);
+   opacity: 0;
+   transition: transform 1.5s ease-in-out,
+   opacity 1.5s ease-in-out;
+}
+
+.slide-in-formulaire.active {
+   transform: translateX(0%);
+   opacity: 1;
+}
+.slide-in-bar{
+   position: fixed;
+   bottom: 0px;
+   right: 0px;
+   max-width: 700px;
+   align-items: center;
+   transform: translateX(-100%);
+   opacity: 0;
+   transition: transform 1.5s ease-in-out,
+   opacity 1.5s ease-in-out;
+}
+
+.slide-in-bar.active {
    transform: translateX(0%);
    opacity: 1;
 }

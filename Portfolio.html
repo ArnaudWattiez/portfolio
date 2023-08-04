@@ -1,148 +1,152 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
-    <body>
+
+
+<body>
     <div class="slide-in">
         <header>
             <div id="header">
                 <div class="logo">
                     <a href="Portfolio.html">Portfolio</a>
-                    
+
 
                     <ul id="horizontal_list">
-                        <li><a href="./Portfolio.html">Accueil</a></li>
+                        <li><a href="#paragraphe">Accueil</a></li>
                         <li><a href="#A_propos">Presentation</a></li>
                         <li><a href="#Competences">Compétences</a></li>
                         <li><a href="#Projets">Projets</a></li>
                         <li><a href="#formulaire">Contact</a></li>
                     </ul>
-               
-                </div>
-            </div> 
-        </div>    
-        </header>
-    <div class="slide-in-bienvenu">
-    <div id="paragraphe">
-        <div class="tittle tittle__big"> Bienvenue sur mon Portfolio. </div>
 
-       
+                </div>
+            </div>
+
+        </header>
+    </div>
+    <div class="slide-in-bienvenu">
+        <div id="paragraphe">
+            <div class="tittle tittle__big"> Bienvenue sur mon Portfolio. </div>
+
+
             <p> Vous pouvez découvrir mes projets ou en apprendre un peu plus sur moi.</p>
         </div>
     </div>
-        
-       <div id="A_propos">
+    <div class="slide-in-apropos">
+        <div id="A_propos">
             <h1>A propos</h1>
-         
+
             <p>Bonjour, Je m'appelle Arnaud Wattiez,en formation developpeur web et web mobile.<br>
                 Auparavant, J'ai effectué des stages en magasins de prêt-à-porter (kiabi,brice) et quelques mois en tant
                 que teleconseiller (orange/canal+) ce qui m’a permis d’acquérir de très bonnes compétences telles que
                 l’organisation, l’écoute,le conseil ainsi que des qualités relationnelles importantes.</br>
                 Le Développement Web, domaine qui m’intéressait depuis quelques années, J'ai décidé de suivre la
                 formation Developpeur Web et web mobile au sein de AFCI de Liévin.</p></br>
-       
+
+        </div>
     </div>
+    <div class="slide-in-competences">
+        <div id="Competences">
+            <h1>Compétences</h1>
 
-    <div id="Competences">
-                <h1>Compétences</h1>
-                
-            
+
             <div id="langage">
-                    <h2>Langages</h2>
+                <h2>Langages</h2>
 
-                
-                    <p>Html</p>
+
+                <p>Html</p>
                 <div id="HTML"><span>50%</span></div>
 
-                    <p>Css</p>
+                <p>Css</p>
                 <div id="CSS"><span>30%</span></div>
-                
-                    <p>JS</p>
-                <div id="JS"><span>10%</span></div>
-                
-               
-                    <p>PHP</p>
-                 <div id="PHP"><span>10%</span></div> 
-                 
-                 
-                    <p>Symfony</p>
-                <div id="Symfony"><span>10%</span></div> 
-                 
-            </div>
-                
-                <div id="CV">  
-                   <h2>CV</h2>
 
-            <a href="img/CV.png"><img src="img/CV.png" alt="Image" style="width:500px;height:600px"></a>   
+                <p>JS</p>
+                <div id="JS"><span>10%</span></div>
+
+
+                <p>PHP</p>
+                <div id="PHP"><span>10%</span></div>
+
+
+                <p>Symfony</p>
+                <div id="Symfony"><span>10%</span></div>
+
             </div>
-            
-        </div> 
-         <div id="Projets">
+
+            <div id="CV">
+                <h2>CV</h2>
+
+                <a href="img/CV.png"><img src="img/CV.png" alt="Image" style="width:500px;height:600px"></a>
+            </div>
+        </div>
+    </div>
+    <div class="slide-in-projets">
+        <div id="Projets">
             <h1>Mes Projets</h1>
-           
+
             <h2>Les projets en cours :</h2>
 
             <div class="bloc-grid">
 
-                <div class="item"><a href="Portfolio.html"target="_blank"><strong>Portfolio</strong></a></div>
+                <div class="item"><a href="Portfolio.html" target="_blank"><strong>Portfolio</strong></a></div>
                 <div class="item">Projet2</div>
                 <div class="item">Projet3</div>
                 <div class="item">Projet4</div>
                 <div class="item">Projet5</div>
             </div>
         </div>
-        <h1>Contact</h1>
-         
+    </div>
+    <div class="slide-in-formulaire"> 
+   
         <div id="formulaire">
+            
             <div class="form-box">
-            <h2>Formulaire</h2>
+                <h2>Me Contacter</h2>
+            <h3>Formulaire</h3>
 
-            <form action="mail.to">
+            <form>
                 <div class="box-input">
-                    <input type="text" required>
-                    <label>Prenom</label>
+                    <input type="text" id="name" name="nom" style="font-family:roboto" required>
+                    <label for="prenom">Prenom</label>
                 </div>
 
                 <div class="box-input">
-                    <input type="text" required>
-                    <label>Nom</label>
+                    <input type="text" id="prenom" name="prenom" style="font-family:roboto"required>
+                    <label for="nom">Nom</label>
                 </div>
                     <div class="box-input">
                     <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>                        
+                    <input type="email" id="mail" name="mail" style="font-family:roboto" required>
+                    <label for="mail">Email</label>                        
                 
                 </div>  
-                <button type="submit" id="btn">Envoyer</button>
+                <button type="button"id="btn" onclick="ouvrirMessagerie()">Envoyer</button> 
             </form>
             </div>
-            </div> 
+         </div>
+    </div>
+<div class="slide-in-bar">
+     <div class="sidebar">
+        <div class="button-btn-sidebar">
+            <ul>
+                <li><button class="button"><a href="mailto:arnaud.wattiez.pro@gmail.com" target="_blank"><img src="img/gmail.png" alt="Image" height="60" width="70"></a></li></button>
+                <li><button class="button"><a href="https://www.linkedin.com/in/arnaud-wattiez-0852a6205" target="_blank"><img src="img/linkedin.png" alt="Image" height="70" width="70"></a></li></button>
+                <li><button class="button"><a href="https://github.com/ArnaudWattiez/portfolio/tree/dev" target="_blank"><img src="img/github.png" alt="Image" height="70" width="70"></a></li></button>
+            </ul>
         </div>
-        <div class="sidebar">
-            <div class="button-btn-sidebar">
-                <ul>
-                    <li><button class="button"><a href="mailto:arnaud.wattiez.pro@gmail.com"target="_blank"><img src="img/gmail.png"
-                                    alt="Image" height="60" width="70"></a></li></button>
-                    <li><button class="button"><a href="https://www.linkedin.com/in/arnaud-wattiez-0852a6205"target="_blank"><img
-                                    src="img/linkedin.png" alt="Image" height="70" width="70"></a></li></button>
-                    <li><button class="button"><a href="https://github.com/ArnaudWattiez/portfolio/tree/dev"target="_blank"><img
-                                    src="img/github.png" alt="Image" height="70" width="70"></a></li></button>
-                </ul>
-            </div>
-        </div>
-    
-        <footer>
-        </footer>
+    </div>
+</div>
+    <footer>
+    </footer>
     <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
+</body>
 
-    </html>
+</html>
